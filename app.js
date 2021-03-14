@@ -12,7 +12,8 @@ app.get("/", function(req, res) {
 
 app.get("/btc/:page", function(req, res) {
         var page = req.params.page;
-	res.send("<h1>page: " + page + "</h1>"); // Send Hello World
+	res.render("btcKeypage",{ page });
+	//res.send("<h1>page: " + page + "</h1>"); // Send Hello World
 });
 
 
